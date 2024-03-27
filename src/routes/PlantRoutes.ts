@@ -23,11 +23,13 @@ plantRouter.post("/", (req, res) => {
   plantController.create(req, res);
 });
 
-// update plant /api/plants/952435
+// update plant /api/plants/:id
 plantRouter.put("/:id", (req, res) => {
   console.log("plantRouter");
   plantController.update(req, res);
 });
+
+// delete plant /api/plants/:id
 
 plantRouter.delete("/:id", (req, res) => {
   console.log("plantRouter");

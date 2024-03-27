@@ -42,9 +42,9 @@ export default PlantService;
 
 // Je dois pouvoir récupérer toutes les plantes de la base de données. ok
 // Je dois pouvoir récupérer une plante de la base de données en fonction de son id. ok
-// Je dois pouvoir ajouter une plante dans la base de données.
-// Je dois pouvoir modifier une plante dans la base de données.
-// Je dois pouvoir supprimer une plante de la base de données.
+// Je dois pouvoir ajouter une plante dans la base de données. ok
+// Je dois pouvoir modifier une plante dans la base de données. ok
+// Je dois pouvoir supprimer une plante de la base de données. ok
+
 // Je dois pouvoir inscrire un utilisateur dans la base de données.
 // Je dois pouvoir authentifier un utilisateur de la base de données.
-// ​
