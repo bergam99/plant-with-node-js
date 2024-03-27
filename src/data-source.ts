@@ -6,6 +6,7 @@ dotenv.config({ path: ".env.local" });
 
 const AppDataSource = new DataSource({
   entities: [Plant],
+  synchronize: false,
   type: "postgres",
   host: process.env.DB_HOST,
   port: Number(process.env.DB_PORT),
