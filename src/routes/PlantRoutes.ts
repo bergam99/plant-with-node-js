@@ -1,11 +1,12 @@
 import { Router } from "express";
 import PlantController from "../controllers/PlantControllers";
+import checkToken from "../middleware/CheckToken";
 
 const plantRouter = Router();
 const plantController = new PlantController();
 
 // get all plants    =>  /api/plants
-plantRouter.get("/", (req, res) => {
+plantRouter.get("/", checkToken, (req, res) => {
   console.log("plantRouter");
 
   plantController.getAll(req, res);
