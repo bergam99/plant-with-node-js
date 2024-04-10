@@ -1,4 +1,4 @@
--- JSON to POSTGRES
+-- JSON to POSTGRES sql
 
 DROP TABLE IF EXISTS plants CASCADE;
 
