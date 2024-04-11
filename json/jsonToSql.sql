@@ -1,6 +1,7 @@
 -- JSON to POSTGRES sql
 
 DROP TABLE IF EXISTS plants CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
 
 CREATE TABLE plants (
     id SERIAL PRIMARY KEY,
@@ -9,6 +10,12 @@ CREATE TABLE plants (
     arrosage INT NOT NULL,
     categorie VARCHAR(255) NOT NULL,
     image VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE user (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL
 );
 
 -----------------------------------------------
